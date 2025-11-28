@@ -1,0 +1,83 @@
+/* ============================
+      GLOBAL FONT
+============================ */
+html, body, [class*="css"] {
+    font-family: "Inter", sans-serif;
+}
+
+
+/* ============================
+      SIDEBAR CONTAINER
+============================ */
+section[data-testid="stSidebar"] {
+    background-color: #f7f7f9 !important;
+    border-right: 1px solid #dcdcdc;
+    padding-top: 20px;
+}
+
+/* --- MAKE SIDEBAR STICKY --- */
+section[data-testid="stSidebar"] {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+
+/* ============================
+      BUTTON STYLE
+============================ */
+.stButton > button {
+    width: 100%;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: left;
+
+    border: 1px solid #d0d0d0;
+    background-color: #ffffff;
+    color: #333;
+
+    transition: all 0.15s ease-in-out;
+}
+
+/* Hover */
+.stButton > button:hover {
+    border-color: #ff4b4b;
+    background-color: #fff5f5;
+    color: #ff4b4b;
+    cursor: pointer;
+}
+
+/* Active state (focused page) */
+.stButton > button:focus {
+    background-color: #ffeded !important;
+    border-color: #ff4b4b !important;
+    color: #000000 !important;
+    font-weight: 600;
+}
+
+
+/* ============================
+     MAIN CONTAINER TWEAKS
+============================ */
+
+/* reduce excessive padding */
+.css-18e3th9 {
+    padding-top: 1rem !important;
+}
+
+/* optional: make layout tighter */
+.css-1d391kg {
+    padding-top: 1rem !important;
+}
+
+/* Improve the scrolling of main content */
+.block-container {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
